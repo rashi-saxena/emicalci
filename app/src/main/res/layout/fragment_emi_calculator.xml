@@ -1,0 +1,209 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.emicalci.EmiCalculatorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.hp.emicalci.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:paddingStart="15dp"
+                android:layout_weight="0.4"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:id="@+id/ETamount"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingBottom="15dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Interest %"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="0.4"
+                android:paddingStart="15dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Interest"
+                android:layout_weight="0.6"
+                android:inputType="number"
+                android:id="@+id/ETinterest"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingBottom="15dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Period"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_weight="0.4"
+                android:paddingStart="15dp"
+                tools:ignore="Suspicious0dp" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Years"
+                android:layout_weight="0.3"
+                android:inputType="number"
+                android:id="@+id/ETyears"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Month"
+                android:layout_weight="0.3"
+                android:inputType="number"
+                android:id="@+id/ETmonth"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingBottom="20dp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="EMI"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:paddingStart="15dp"
+                android:layout_weight="0.4" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="EMI"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.6"
+                android:id="@+id/TVemi"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:id="@+id/BtnCalculate"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/holo_blue_dark"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/BtnReset"
+                android:background="@android:color/holo_blue_dark"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail"
+                android:id="@+id/BtnDetail"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_smallest"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/border"
+            android:visibility="invisible">
+            <TableRow
+                android:background="@drawable/border">
+                <TextView
+                    android:text="Monthly EMI"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:id="@+id/TVmonthlyEmi"/>
+            </TableRow>
+            <TableRow
+                android:background="@drawable/border">
+                <TextView
+                    android:text="Total Interest"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:text="1234"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:id="@+id/TVtotalInterest"/>
+            </TableRow>
+            <TableRow
+                android:background="@drawable/border">
+                <TextView
+                    android:text="Total Payment"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:text="1234"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:id="@+id/TVtotalPayment"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
