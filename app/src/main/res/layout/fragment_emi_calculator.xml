@@ -157,10 +157,11 @@
             android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/border"
-            android:visibility="invisible">
+            android:background="@drawable/border2"
+            android:visibility="invisible"
+            >
             <TableRow
-                android:background="@drawable/border">
+                >
                 <TextView
                     android:text="Monthly EMI"
                     android:padding="10dp"
@@ -173,7 +174,7 @@
                     android:id="@+id/TVmonthlyEmi"/>
             </TableRow>
             <TableRow
-                android:background="@drawable/border">
+                >
                 <TextView
                     android:text="Total Interest"
                     android:padding="10dp"
@@ -187,7 +188,7 @@
                     android:id="@+id/TVtotalInterest"/>
             </TableRow>
             <TableRow
-                android:background="@drawable/border">
+                >
                 <TextView
                     android:text="Total Payment"
                     android:padding="10dp"

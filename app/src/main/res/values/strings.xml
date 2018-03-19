@@ -8,4 +8,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="detail_chart">
+        <item>Details</item>
+        <item>Chart</item>
+    </string-array>
+    <string-array name="line_pie">
+        <item>Line Chart</item>
+        <item>Pie Chart</item>
+    </string-array>
 </resources>

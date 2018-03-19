@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity
             fragment = new EmiCalculatorFragment();
 
         } else if (id == R.id.compare_loans) {
-
+            fragment = new CompareLoansFragment();
         } else if (id == R.id.currency_converter) {
 
         } else if (id == R.id.settings) {

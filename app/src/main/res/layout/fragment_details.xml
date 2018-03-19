@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@android:color/holo_blue_dark">
-
+        android:background="@android:color/darker_gray">
 
         <TableLayout
             android:id="@+id/table_smallest"
@@ -23,98 +22,98 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/border">
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Loan Amount" />
 
                 <TextView
                     android:id="@+id/TVamount"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234"/>
             </TableRow>
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Interest %" />
 
                 <TextView
                     android:id="@+id/TVinterest"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234" />
             </TableRow>
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Period(Months)" />
 
                 <TextView
                     android:id="@+id/TVmonths"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234" />
             </TableRow>
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Monthly EMI" />
 
                 <TextView
                     android:id="@+id/TVmonthlyEmi"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234" />
             </TableRow>
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Total Interest" />
 
                 <TextView
                     android:id="@+id/TVtotalInterest"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234" />
             </TableRow>
 
-            <TableRow android:background="@drawable/border">
+            <TableRow >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="Total Payment" />
 
                 <TextView
                     android:id="@+id/TVtotalPayment"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/border2"
                     android:padding="10dp"
                     android:text="1234" />
             </TableRow>
@@ -125,31 +124,31 @@
             android:layout_height="match_parent"
             android:paddingStart="10dp"
             android:paddingEnd="10dp">
-            <TableRow android:background="@drawable/border"
+            <TableRow android:background="@android:color/holo_blue_dark"
                 >
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:textColor="@android:color/white"
                     android:padding="10dp"
                     android:text="Month"
                     android:gravity="center"/>
 
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:textColor="@android:color/white"
                     android:padding="10dp"
                     android:text="Principle"
                     android:gravity="center"/>
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:textColor="@android:color/white"
                     android:padding="10dp"
                     android:text="Interest"
                     android:gravity="center"/>
                 <TextView
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:textColor="@android:color/white"
                     android:padding="10dp"
                     android:text="Balance"
                     android:gravity="center"/>
